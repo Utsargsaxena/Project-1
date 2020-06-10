@@ -5,44 +5,54 @@
     <title> 
 Project1
   </title> 
-  
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="project1css.css">
-    <link rel="stylesheet" 
-          href= 
-"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-  
-   
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="project1css.css">
 </head> 
   
 <body> 
     <!-- Navbar text is dark and background is light -->
-    <nav class="navbar navbar-custom"> 
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark"> 
         <a class="navbar-brand" href="#"> 
         	<img src="./logo.png" class="logo">
         
       </a> 
-      <a class="navbar-nav active" href="#"> 
-			Home      
-		</a> 
-		<a class="navbar-nav" href="#"> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">
+			      Home      
+		              <span class="sr-only">(current)</span></a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="#"> 
 			About
-      </a> <a class="navbar-nav" href="#">
+      </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
       		Inquiry
-      </a> <a class="navbar-nav" href="#"> 
+      </a> 
+				</li>
+				<li class="nav-item">
+					 <a class="nav-link" href="#">
       		Topper's
       </a> 
-       <a class="navbar-nav" href="#"> 
-      		Topper's
-      </a> 
-  
+				</li>
+			</ul>
+</div> 
+		
     </nav> 
 
-    
-</head>
 <body>
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div class="container">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top: 20px">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -50,14 +60,13 @@ Project1
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="./school1.jpg" alt="First slide" height="1000px" width="100px">
-      <h1> Image</h1>
+      <img src="school1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./school2.jpg" alt="Second slide" height="1000px" width="100px">
+      <img src="school2.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./school3.jpg"alt="Third slide" height="1000px" width="100px">
+      <img src="school3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -68,12 +77,12 @@ Project1
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-  <hr>
 </div>
+	</div>
 <!-- School Section-->
-<div class="container">
+<div class="container" style="padding-top: 20px">
  	<div class="row">
- 		<div class="col-6">
+ 		<div class="col-md-6" style="margin-top: 40px;">
 	<h3> Admissions</h3>
 	<p>
 		Today, the programs at Princeton School are sought after by
@@ -86,17 +95,18 @@ that meets the expectations of the students aspiring.
 	</p>
 		</div>
 
- <div class="col-6">
+ <div class="col-md-6">
 <img src="./admission.png" id="adm" >
+	</div>
 	</div>
 	
 	<div class="row">
-		<div class="col-6">
+		<div class="col-md-6">
 			
-		<img src="./social.png" id="schlife"  style="margin-top: 40px;"  >
+		<img src="./social.png" id="schlife">
 
 		</div>
-		 <div class="col-6" style="margin:40px 0px 0px 0px;" >
+		 <div class="col-md-6" style="margin-top:40px; padding-left: 10px" >
 		 	<h3>School Life</h3>
 			<p class="schlife" >
 				School life gives ever green moments and  good <br>memories to many of
@@ -107,8 +117,9 @@ values in our school which is very crucial<br> for our lives. School is
 our first learning institution.
 </p>
 	</div>
+	</div>
 	<div class="row">
- 		<div class="col-6">
+ 		<div class="col-md-6" style="margin-top: 40px;" >
 	<h3> Infrastructure</h3>
 	<p>
 		Our main building is in the form of a castle with a modern
@@ -122,13 +133,12 @@ architecture and the landscape
 	</p>
 		</div>
 
- <div class="col-6">
+ <div class="col-md-6">
 <img src="./infra.png" id="infra" >
 	</div>
 </div>
 </div>
-</div>
-</div>
+
 <!-- end school section-->
 <hr>
 <div class="container-fluid">

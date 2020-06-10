@@ -27,11 +27,12 @@ background: linear-gradient(to top,#ffe838,#fd57bf);
         	width: 50px;
 
         }
+img{
+	max-width: 100%;
+}
 
-
-.carousel-inner {
-  height: 100vh;
-  width: 100vw;
+.carousel-item {
+  height: 600px;
   
 }
 html,body{
